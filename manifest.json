@@ -1,0 +1,16 @@
+{
+	"name": "WebInstrument",
+	"description": "Extension to collect URL referred to or requests initiated by js",
+	"version": "0.0",
+	"manifest_version": 3,
+	"action": {
+		"default_title": "WebInstrument to collect URL referred to",
+		"default_popup": "popup.html"
+	},
+	"background": {
+		"service_worker": "worker.js"
+	},
+	"permissions": [
+		"storage", "activeTab", "scripting", "debugger"
+	]
+}
